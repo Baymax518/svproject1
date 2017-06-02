@@ -1,0 +1,47 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace svproject1
+{
+    public partial class aasthaselect : Form
+    {
+        public aasthaselect()
+        {
+            InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form1 f1 = new Form1();
+            f1.ShowDialog();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            aasthaincome ai = new aasthaincome();
+            ai.ShowDialog();
+
+        }
+
+        private void aasthaselect_Load(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Maximized;
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            formselect f1 = new formselect();
+            f1.Show();
+        }
+    }
+}
